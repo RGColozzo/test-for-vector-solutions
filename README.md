@@ -17,52 +17,42 @@ Before you start automating, I recommend you to install all the frameworks liste
 - [x] [VSCode](https://code.visualstudio.com/)
 - [x] [Git Bash](https://git-scm.com/downloads)
 
-First we have to configure our automation frameworks. Let's get started by cloning the repository. For that, use the command line bellow in your Git Bash:
+First of all we have to configure our automation frameworks. Let's get started by cloning the repository. For that, use the command line bellow in your Git Bash:
 
 ```bash
 $ git clone https://github.com/RGColozzo/test-for-vector-solutions.git
 ```
 
-After doing that you have to run the command bellow to install pyyaml:
-
-```bash
-$ pip install pyyaml
-```
-
-Now you're seted up can start installing and configuring 🤖 Robot Framework and the Selenium library!
+Now you can start installing and configuring 🤖 Robot Framework to run the tests!
 
 ### Configuration
 ---
 
-✅ *STEP 1* - Open Git Bash to install Robot Framework and the Selenium2Library (you'll need to have python and pip installed for that):
+✅ *STEP 1* - Let's get started by running the following command in your Git Bash (you'll need to have python and pip installed for that):
 
 ```bash
-# Install Robot Framework
-$ pip install robotframework
-
-# Install Selenium2Library
-$ pip install robotframework-selenium2library
+$ pip install -r requirements.txt
 ```
 
-✅ *STEP 2* - Now we have to download and save the [Chromedriver](https://chromedriver.chromium.org/downloads), because we'll use Chrome as our testing browser.
-**Obs.: Remember to always verify the version of your Chrome browser and e get the compatible driver for it.**
+✅ *STEP 2* - Now we have to download and save the [Geckodriver](https://github.com/mozilla/geckodriver/releases) (for this test we'll use Mozilla Firefox as our testing browser).
 
 ✅ *STEP 3* - Extract the file out of the downloaded file .zip (or .rar).
 
-✅ *STEP 4* - Go to your C: directory and create a new folder called "Automation Drivers".
+✅ *STEP 4* - Go to your C: directory and create a new folder with the name that you want to, I'm going to call mine as "webdrivers".
 
-✅ *STEP 5* - Put the chromedriver.exe file inside that folder.
+✅ *STEP 5* - Put the chromedriver.exe file inside the folder you created.
 
-✅ *STEP 6* - Edit your PATH environment variable and add inside of it the path to your chrome driver (C:\Automation Drivers\chromedriver.exe).
+✅ *STEP 6* - Edit your PATH environment variable and add inside of it the path to your geckodriver (Example: C:\webrivers\geckodriver.exe).
 
-Now that you have all installed and configured, let's run this automations!
+Now we're setted up, so let's run some automation tests!
 
 ### Execution
 ---
 
-To execute the automations you'll have to execute the command bellow in your projects directory using Git Bash:
+Run the command bellow to execute the automation tests:
+
 ```bash
-$ make runantomation
+$ robot -d logs -i @vector -L debug vector_solutions_test.robot
 ```
 
 ### Author
