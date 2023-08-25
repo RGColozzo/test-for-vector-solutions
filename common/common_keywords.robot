@@ -4,15 +4,21 @@ Library     ../lib/PageAtributes.py
 
 *** Keywords ***
 load page object
-    ${HOME_PAGE}=       get_page_attributes    home_page
-    ${CART_PAGE}=       get_page_attributes    cart_page
-    ${END_PAGE}=        get_page_attributes    end_page
-    ${MENS_OW_PAGE}=    get_page_attributes    mens_ow_page
+    ${HOME_PAGE}=         get_page_attributes    home_page
+    ${CART_PAGE}=         get_page_attributes    cart_page
+    ${MENS_OW_PAGE}=      get_page_attributes    mens_ow_page
+    ${LADIES_OW_PAGE}=    get_page_attributes    ladies_ow_page
+    ${MENS_TS_PAGE}=      get_page_attributes    mens_ts_page
+    ${CHECKOUT_PAGE}=     get_page_attributes    checkout_page
+    ${END_PAGE}=          get_page_attributes    end_page
 
     Set Suite Variable    ${HOME_PAGE}
     Set Suite Variable    ${CART_PAGE}
-    Set Suite Variable    ${END_PAGE}
     Set Suite Variable    ${MENS_OW_PAGE}
+    Set Suite Variable    ${LADIES_OW_PAGE}
+    Set Suite Variable    ${MENS_TS_PAGE}
+    Set Suite Variable    ${CHECKOUT_PAGE}
+    Set Suite Variable    ${END_PAGE}
 
 Start browser
     Open Browser    ${BASE_URL}    ${BROWSER}
@@ -53,3 +59,11 @@ I need to see the thank you message
     Wait Until Element Is Visible    ${END_PAGE.btn_finish}    ${GENERAL_TIMEOUT}
     Page Should Contain Element      ${END_PAGE.btn_finish}
     Click Element                    ${END_PAGE.btn_finish}
+
+select mens google grey outerwear product
+    Wait Until Element Is Visible    ${MENS_OW_PAGE.img_google_grey_outerwear}    ${GENERAL_TIMEOUT}
+    Page Should Contain Element      ${MENS_OW_PAGE.img_google_grey_outerwear}
+    Click Element                    ${MENS_OW_PAGE.img_google_grey_outerwear}
+
+add item to cart
+    Click Element    ${CART_PAGE.btn_add_to_cart}

@@ -27,3 +27,13 @@ img_ladies_tshirt:
   web:
     selector: xpath=
     value: //img[@alt='Ladies T-Shirts']
+
+txt_ladies_outerwear:
+  web:
+    selector: text()=
+    value: "Ladies Outerwear"
+
+txt_mens_tshirts:
+  web:
+    selector: text()=
+    value: "Men's T-Shirts"
