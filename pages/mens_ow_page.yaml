@@ -1,14 +1,11 @@
 img_google_grey_outerwear:
-  web:
     selector: xpath=
     value: //img[@alt='Anvil L/S Crew Neck - Grey']
 
 select_box_quantity:
-  web:
     selector: id=
     value: quantitySelect
 
 select_box_option_2:
-  web:
     selector: xpath=
     value: //option[@value='2']
