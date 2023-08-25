@@ -24,8 +24,8 @@ TC.002 - Add a product to my shopping cart and then remove it
     [Tags]    @vector
 
     Given    that I access the shopping website home page
-    When     I add a product to my shopping cart
-    And      I remove it
+    When     I add 2 identical products to my shopping cart
+    And      I remove them
     Then     I need to see the message that my shopping cart is empty
 
 TC.002 - Add 3 different products to my shopping cart and check out successfully
