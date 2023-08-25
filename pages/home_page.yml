@@ -1,0 +1,29 @@
+txt_logo:
+  web:
+    selector: text()=
+    value: "SHOP"
+
+btn_shopping_cart:
+  web:
+    selector: id=
+    value: icon
+
+img_mens_outerwear:
+  web:
+    selector: xpath=
+    value: //img[@alt='Men's Outerwear']
+
+img_ladies_outerwear:
+  web:
+    selector: xpath=
+    value: //img[@alt='Ladies Outerwear']
+
+img_mens_tshirt:
+  web:
+    selector: xpath=
+    value: //img[@alt='Men's T-Shirts']
+
+img_ladies_tshirt:
+  web:
+    selector: xpath=
+    value: //img[@alt='Ladies T-Shirts']

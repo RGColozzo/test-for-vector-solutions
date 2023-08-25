@@ -1,0 +1,9 @@
+txt_your:
+  web:
+    selector: text()=
+    value: "Your "
+
+txt_is_empty:
+  web:
+    selector: text()=
+    value: " is empty."

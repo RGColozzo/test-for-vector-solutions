@@ -1,0 +1,14 @@
+txt_thank_you:
+  web:
+    selector: text()=
+    value: "Thank you"
+
+txt_demo_complete:
+  web:
+    selector: text()=
+    value: "Demo checkout process complete."
+
+btn_finish:
+  web:
+    selector: text()=
+    value: "Finish"
