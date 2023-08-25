@@ -23,3 +23,7 @@ btn_remove_item:
     selector: xpath=
     value: //paper-icon-button[contains(@class, "delete-button")]
 
+btn_checkout:
+  web:
+    selector: text()=
+    value: "Checkout"

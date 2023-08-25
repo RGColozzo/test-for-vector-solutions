@@ -7,3 +7,5 @@ Library     ../lib/PageAtributes.py
 I add 3 different products to my shopping cart
 
 I checkout
+    Click Element    ${CART_PAGE.btn_checkout}
+    

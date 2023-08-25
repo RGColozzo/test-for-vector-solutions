@@ -1,0 +1,49 @@
+input_email:
+  web:
+    selector: id=
+    value: accountEmail
+
+input_phone:
+  web:
+    selector: id=
+    value: accountPhone
+
+input_card_holder:
+  web:
+    selector: id=
+    value: ccName
+
+input_card_number:
+  web:
+    selector: id=
+    value: ccNumber
+
+input_cvv:
+  web:
+    selector: id=
+    value: ccCVV
+
+input_address:
+  web:
+    selector: id=
+    value: shipAddress
+
+input_city:
+  web:
+    selector: id=
+    value: shipCity
+
+input_state:
+  web:
+    selector: id=
+    value: shipState
+
+input_zip:
+  web:
+    selector: id=
+    value: shipZip
+
+btn_place_order:
+  web:
+    selector: id=
+    value: submitBox
