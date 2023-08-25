@@ -23,7 +23,13 @@ First we have to configure our automation frameworks. Let's get started by cloni
 $ git clone https://github.com/RGColozzo/test-for-vector-solutions.git
 ```
 
-Now we can start installing and configuring 🤖 Robot Framework and the Selenium library!
+After doing that you have to run the command bellow to install pyyaml:
+
+```bash
+$ pip install pyyaml
+```
+
+Now you're seted up can start installing and configuring 🤖 Robot Framework and the Selenium library!
 
 ### Configuration
 ---
