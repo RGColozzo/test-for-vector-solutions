@@ -4,13 +4,15 @@ Library     ../lib/PageAtributes.py
 
 *** Keywords ***
 load page object
-    ${HOME_PAGE}=    get_page_attributes    home_page
-    ${CART_PAGE}=    get_page_attributes    cart_page
-    ${END_PAGE}=     get_page_attributes    end_page
+    ${HOME_PAGE}=       get_page_attributes    home_page
+    ${CART_PAGE}=       get_page_attributes    cart_page
+    ${END_PAGE}=        get_page_attributes    end_page
+    ${MENS_OW_PAGE}=    get_page_attributes    mens_ow_page
 
     Set Suite Variable    ${HOME_PAGE}
     Set Suite Variable    ${CART_PAGE}
     Set Suite Variable    ${END_PAGE}
+    Set Suite Variable    ${MENS_OW_PAGE}
 
 Start browser
     Open Browser    ${BASE_URL}    ${BROWSER}
