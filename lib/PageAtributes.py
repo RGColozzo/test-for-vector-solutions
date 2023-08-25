@@ -6,7 +6,6 @@ import  yaml
 from robot.libraries.BuiltIn import BuiltIn
 
 def load_page_attributes(page):
-    # try to load from local folder
     print("----------")
     
     file_name = "{}.yaml".format(page)
@@ -24,19 +23,15 @@ def load_page_attributes(page):
         print("Could not load local page object")
         
 def select_os(yaml_page):
-    os = BuiltIn().get_variable_value("${G_OS}")
-    os = os.lower()
-    print("os: ")
-    print(os)
     page = {}
     for key in yaml_page.keys():
         print("key: ")
         print(key)
-        if yaml_page[key][os]["selector"] == "text":
-            page[key] = yaml_page[key][os]["value"]
+        if yaml_page[key]["selector"] == "text":
+            page[key] = yaml_page[key]["value"]
         else:
-            if yaml_page[key][os]["selector"] and yaml_page[key][os]["value"]:
-                page[key] = yaml_page[key][os]["selctor"] + yaml_page[key][os]["value"]
+            if yaml_page[key]["selector"] and yaml_page[key]["value"]:
+                page[key] = yaml_page[key]["selctor"] + yaml_page[key]["value"]
             else:
                 page[key] = "Selector empty, please go to the page object definition and fill it with a not empty value"
         
