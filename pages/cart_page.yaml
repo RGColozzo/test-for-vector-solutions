@@ -1,29 +1,23 @@
 txt_your:
-  web:
     selector: text()=
     value: "Your "
 
 txt_is_empty:
-  web:
     selector: text()=
     value: " is empty."
 
 btn_add_to_cart:
-  web:
     selector: text()=
     value: "Add to Cart"
 
 btn_view_cart:
-  web:
     selector: text()=
     value: "View Cart"
 
 btn_remove_item:
-  web:
     selector: xpath=
     value: //paper-icon-button[contains(@class, "delete-button")]
 
 btn_checkout:
-  web:
     selector: text()=
     value: "Checkout"
