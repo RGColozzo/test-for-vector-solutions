@@ -1,0 +1,4 @@
+img_ladies_colorblock_wind_jacket:
+  web:
+    selector: xpath=
+    value: //img[@alt='Ladies Colorblock Wind Jacket']

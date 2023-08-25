@@ -1,0 +1,4 @@
+img_mens_android_super_hero_tshirt:
+  web:
+    selector: xpath=
+    value: //img[@alt='Adult Android Superhero T-Shirt']
