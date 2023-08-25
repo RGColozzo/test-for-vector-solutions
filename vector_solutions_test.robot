@@ -20,7 +20,7 @@ TC.001 - Check my shopping cart before I start shopping
     When     I visit my shopping cart page whitout selecting any products
     Then     I need to see the message that my shopping cart is empty
     
-TC.002 - Add a product to my shopping cart and then remove it
+TC.002 - Add 2 identical products to my shopping cart and then remove them
     [Tags]    @vector
 
     Given    that I access the shopping website home page
