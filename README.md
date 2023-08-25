@@ -62,8 +62,7 @@ Now that you have all installed and configured, let's run this automations!
 
 To execute the automations you'll have to execute the command bellow in your projects directory using Git Bash:
 ```bash
-# Install Selenium2Library
-$ 
+$ make runantomation
 ```
 
 ### Author
